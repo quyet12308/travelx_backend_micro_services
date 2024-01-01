@@ -8,7 +8,7 @@ def send_email_forgot_password(username,password, code, to_email):
 
     FROM_EMAIL = emails["outlook"]
 
-    MESSAGE = f"""Subject: Send email from Nhom13
+    MESSAGE = f"""Subject: Send email from Nhom9
 
     Hello {username} are you forgot password .
 
@@ -90,7 +90,7 @@ def send_email_confirm_registration(username,password, code, to_email):
 
     FROM_EMAIL = emails["outlook1"]
 
-    MESSAGE = f"""Subject: Send email from Nhom13
+    MESSAGE = f"""Subject: Send email from Nhom9
 
     Hello {username} are you register new acc .
 
