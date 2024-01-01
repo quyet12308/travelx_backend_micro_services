@@ -1,5 +1,5 @@
 
-# Backend dự án lớn công nghệ web
+# Backend dự án lớn lập trình hướng dịch vụ
 
 ## Khái quát dự án 
 - Với thời đại công nghệ 4.0 hiện nay thì gần như mọi thứ đặc biệt là nhành dịch vụ trong đó có du lịch đang chuyển đổi số hóa mạnh mẽ , vì vậy trong môn học lập trình hướng dịch vụ này tôi có đại diện nhóm và tạo ra 1 trang web về dịch vụ du lịch thế giới .
@@ -9,13 +9,13 @@
     - tour_service
     - user_service
 
-## Dự án backend công nghệ web fastapi sử dụng các công nghệ 
+## Dự án backend lập trình hướng dịch vụ fastapi sử dụng các công nghệ 
 
 - front-end: html ,css , js.
 - back-end : fastapi.
 - database: sqlite.
 
-## Hướng dẫn tải và chạy project công nghệ web backend fastapi
+## Hướng dẫn tải và chạy project lập trình hướng dịch vụ backend fastapi
 
 1. b1: sử dụng git clone backend này về (di chuyển đến nơi muốn lưu dự án trong cmd gõ): 
 ```cmd
