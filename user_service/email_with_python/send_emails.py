@@ -1,12 +1,14 @@
 import smtplib
 import getpass
-from base_code.security_info import passwords ,emails
 
-def send_email_forgot_password(username,password, code, to_email):
+# from ..base_code.security_info import passwords, emails
+
+
+def send_email_forgot_password(email, username, password, code, to_email):
     HOST = "smtp-mail.outlook.com"
     PORT = 587
 
-    FROM_EMAIL = emails["outlook"]
+    FROM_EMAIL = email
 
     MESSAGE = f"""Subject: Send email from Nhom9
 
@@ -36,26 +38,32 @@ def send_email_forgot_password(username,password, code, to_email):
     print("Email sent successfully")
     return "Email sent successfully"
 
+
 # Sử dụng hàm
 # if __name__ == "__main__":
 # password = passwords["outlook"]
-# # # print(password)
-# #     # password = getpass.getpass("Enter password: ")
+# # # # print(password)
+# # #     # password = getpass.getpass("Enter password: ")
 # code = "000000"  # Thay bằng code bạn muốn gửi đi
 # to_email = emails["email_test_to_send"]  # Địa chỉ email của người nhận
-# result = send_email_forgot_password(password, code, to_email)
+# result = send_email_forgot_password(
+#     username="test", password=password, code=code, to_email=to_email
+# )
 
 # if result == "Email sent successfully":
 #     print("ok")
 # else:
 #     print("something wrong to send email , please check your email again")
 
+
 # reminder admin about contact
-def send_email_reminder_admin_about_contact_customer(username,password, to_email , created_time):
+def send_email_reminder_admin_about_contact_customer(
+    email, username, password, to_email, created_time
+):
     HOST = "smtp-mail.outlook.com"
     PORT = 587
 
-    FROM_EMAIL = emails["outlook"]
+    FROM_EMAIL = email
 
     MESSAGE = f"""Subject: Reminder email for Admin about contact customer
 
@@ -83,12 +91,13 @@ def send_email_reminder_admin_about_contact_customer(username,password, to_email
     print("Email sent successfully")
     return "Email sent successfully"
 
+
 # confirm email registeration
-def send_email_confirm_registration(username,password, code, to_email):
+def send_email_confirm_registration(email, username, password, code, to_email):
     HOST = "smtp-mail.outlook.com"
     PORT = 587
 
-    FROM_EMAIL = emails["outlook1"]
+    FROM_EMAIL = email
 
     MESSAGE = f"""Subject: Send email from Nhom9
 

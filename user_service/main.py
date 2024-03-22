@@ -104,7 +104,11 @@ async def forgot_password_basic(request_data: dict):  # hàm chức năng đăng
                 email=email, code=code, createdTime=time_now, username=name_
             )  # lưu code,name và email vào catcha
             send_email_forgot_password(
-                code=code, password=passwords["outlook"], to_email=email, username=name_
+                code=code,
+                password=passwords["outlook"],
+                to_email=email,
+                username=name_,
+                email=emails["outlook"],
             )  # giử email quên mật khẩu
             return {
                 "response": {
@@ -210,6 +214,7 @@ async def register_basic(request_data: dict):
                     code=code_randum,
                     password=passwords["outlook"],
                     to_email=email,
+                    email=emails["outlook"],
                 )  # gửi email
                 save_data_for_confirm_code_in_table(
                     createdTime=time_now, email=email, username=name, code=code_randum
