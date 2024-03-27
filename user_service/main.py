@@ -15,7 +15,7 @@ from base_code.get_token import *
 from base_code.get_code import *
 from login_register_database import *
 from catcha_code_for_send_email import *
-from email_with_python.send_emails import *
+from email_with_python.send_emails_using_oulook_server import *
 from hash_function import *
 
 
@@ -278,6 +278,8 @@ async def register_confirm_code_email(request_data: dict):
                         "status": False,
                     }
                 }
+    else:
+        return {"response": {"message": responses["co_loi_xay_ra"], "status": False}}
 
 
 # hiện thông tin người dùng (thái)

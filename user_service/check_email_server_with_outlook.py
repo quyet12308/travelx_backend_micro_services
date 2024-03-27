@@ -1,5 +1,5 @@
 from base_code.security_info import *
-from email_with_python.send_emails import *
+from email_with_python.send_emails_using_oulook_server import *
 
 password = passwords["outlook"]
 email = emails["outlook2"]
